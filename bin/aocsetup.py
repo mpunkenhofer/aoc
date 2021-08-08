@@ -118,7 +118,7 @@ def load_input_file(year, day, session_id):
 
 def write_file(filename, content, force=False):
     if not filename:
-        logging.info('Missig filename: {}!'.format(filename))
+        logging.info('Missing filename: {}!'.format(filename))
         return
 
     if not content:
