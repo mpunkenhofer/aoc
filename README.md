@@ -1,2 +1,2 @@
-# aoc
-My solutions of Advent of Code problems.
+# Advent of Code 
+This is a collection of my solutions for [Advent of Code](https://adventofcode.com/) problems.
