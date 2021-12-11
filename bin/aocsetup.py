@@ -88,7 +88,7 @@ def process_args(args):
     n.test_output = args.test_output if args.test_output else (
         config['test-output'] if 'test-output' in config else 'tests/test_day{{day}}.py')
     n.input_output = args.input_output if args.input_output else (
-        config['input-output'] if 'input-output' in config else 'inputs/day{{day}}/input')
+        config['input-output'] if 'input-output' in config else 'inputs/input_day{{day}}')
     n.force = args.force if args.force is not None else (
         config['force'] if 'force' in config else False)
     n.wait = args.wait if args.wait is not None else (

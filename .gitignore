@@ -24,3 +24,5 @@ Cargo.lock
 # System Files
 .DS_Store
 Thumbs.db
+
+aocsetup.conf
