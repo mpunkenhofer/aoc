@@ -26,3 +26,5 @@ Cargo.lock
 Thumbs.db
 
 aocsetup.conf
+
+__pychache__

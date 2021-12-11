@@ -1,11 +1,11 @@
-from src.common.util import read_input
+from common.util import read_input
 
 
-def part_one(input):
+def part_one(data):
     return 0
 
 
-def part_two(input):
+def part_two(data):
     return 0
 
 
