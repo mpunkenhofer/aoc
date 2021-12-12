@@ -37,9 +37,9 @@ def part_two(data):
     return depth * position
 
 def main():
-    print('Day 1: Answer for Part 1 {}'.format(
+    print('Day 2: Answer for Part 1 {}'.format(
         part_one(read_input('inputs/input_day02.txt', '\n'))))
-    print('Day 1: Answer for Part 2: {}'.format(
+    print('Day 2: Answer for Part 2: {}'.format(
         part_two(read_input('inputs/input_day02.txt', '\n'))))
 
 

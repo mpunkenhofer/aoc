@@ -10,9 +10,9 @@ def part_two(data):
 
 
 def main():
-    print('Day 1: Answer for Part 1 {}'.format(
+    print('Day {{day}}: Answer for Part 1 {}'.format(
         part_one(read_input('inputs/input_day{{day}}.txt', '\n'))))
-    print('Day 1: Answer for Part 2: {}'.format(
+    print('Day {{day}}: Answer for Part 2: {}'.format(
         part_two(read_input('inputs/input_day{{day}}.txt', '\n'))))
 
 
