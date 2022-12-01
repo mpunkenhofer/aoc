@@ -1,11 +1,11 @@
 from common.util import read_input
 
 
-def part_one(data):
+def part_one(data: list[str]) -> int:
     return 0
 
 
-def part_two(data):
+def part_two(data: list[str]) -> int:
     return 0
 
 

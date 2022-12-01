@@ -1,5 +1,7 @@
 
-def read_input(filename='input', separator=''):
+import os
+
+def read_input(filename='input', separator='') -> list[str]:
     with open(filename, 'r') as f:
         contents = f.read()
 
