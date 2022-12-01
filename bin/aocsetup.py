@@ -102,8 +102,10 @@ def process_args(args):
 def load_input_file(year, day, session_id):
     uri = 'https://adventofcode.com/{}/day/{}/input'.format(year, day)
     aoc_cookie = {'session': session_id}
+    # https://www.reddit.com/r/adventofcode/comments/z9dhtd/please_include_your_contact_info_in_the_useragent/
+    headers = {'User-Agent': 'https://github.com/mpunkenhofer/aoc/tree/main/bin by code.mpunkenhofer@gmail.com'}
 
-    r = requests.get(uri, cookies=aoc_cookie)
+    r = requests.get(uri, cookies=aoc_cookie, headers=headers)
 
     if r.status_code == 200:
         logging.info('Got input from {}'.format(uri))
