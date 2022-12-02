@@ -1,4 +1,4 @@
-from common.util import read_input
+from src.common.util import read_input
 
 
 def part_one(data: list[str]) -> int:
@@ -35,9 +35,9 @@ def part_two(data: list[str]) -> int:
 
 def main():
     print('Day 01: Answer for Part 1: {}'.format(
-        part_one(read_input('inputs/input_day01', '\n'))))
+        part_one(read_input('../inputs/input_day01', '\n'))))
     print('Day 01: Answer for Part 2: {}'.format(
-        part_two(read_input('inputs/input_day01', '\n'))))
+        part_two(read_input('../inputs/input_day01', '\n'))))
 
 
 if __name__ == "__main__":

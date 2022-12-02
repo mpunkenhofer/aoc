@@ -1,4 +1,4 @@
-from common.util import read_input
+from src.common.util import read_input
 
 
 def part_one(data: list[str]) -> int:
