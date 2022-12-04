@@ -10,16 +10,11 @@ def part_one(data: list[str]) -> int:
         s1 = list(map(int, sections[0].split('-')))
         s2 = list(map(int, sections[1].split('-')))
 
-        a = s1 if s1[0] < s2[0] else s2
-        b = s2 if s1[0] < s2[0] else s1
+        s1_delta = s1[1] - s1[0]
+        s2_delta = s2[1] - s2[0]
 
-        if a[0] == b[0]:
-            a_delta = a[1] - a[0]
-            b_delta = b[1] - b[0]
-
-            c = a
-            a = b if a_delta < b_delta else a
-            b = c if a_delta < b_delta else b
+        a = s1 if s1_delta > s2_delta else s2
+        b = s2 if s1_delta > s2_delta else s1
 
         if (b[0] >= a[0] and b[1] <= a[1]):
             overlap_cnt += 1
