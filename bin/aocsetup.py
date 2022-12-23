@@ -15,11 +15,11 @@ def load_config(config_file):
 
     try:
         with open(config_file, mode='r') as f:
-            # logging.info('loading config: {}'.format(config_file))
+            logging.info('Loading config file: {}'.format(config_file))
             config = json.load(f)
             return config
     except FileNotFoundError:
-        # logging.info('creating default config file...')
+        logging.info('Config file not found, creating default config file...')
         return {}
     except json.decoder.JSONDecodeError as e:
         print('Error reading config file "{}": {}.'.format(config_file, str(e)))
